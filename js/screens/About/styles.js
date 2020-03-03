@@ -9,8 +9,16 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   container: {
-      
+      padding: 15
   },
+  text: {
+      fontSize: 16,
+      fontWeight: "400"
+  },
+  title: {
+      fontSize: 23,
+      fontWeight: "500"
+  }
 });
 
 export default styles;
