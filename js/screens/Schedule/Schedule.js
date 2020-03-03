@@ -1,8 +1,11 @@
 import React from 'react';
+import {Text} from 'react-native';
 
 const Schedule = ({}) => {
     return(
-        console.log("stuff")
+        
+        <Text> Test</Text>
+        
     )
 }
 

@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import SessionContainer from './SessionContainer';
+import Session from './Session';
 
 class SessionContainer extends Component {
   render() {
-    return console.log('Stuff');
+    return <Session/>
   }
 }
 

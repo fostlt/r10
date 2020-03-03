@@ -3,7 +3,7 @@ import Schedule from './Schedule';
 
 class ScheduleContainer extends Component {
   render() {
-    return console.log('Stuff');
+    return < Schedule/>
   }
 }
 

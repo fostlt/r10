@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import SpeakerContainer from './SpeakerContainer';
+import Speaker from './Speaker';
 
 class SpeakerContainer extends Component {
   render() {
-    return console.log('Stuff');
+    return <Speaker/>
   }
 }
 

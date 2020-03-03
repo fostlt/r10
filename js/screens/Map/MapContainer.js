@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import MapContainer from './MapContainer';
+import Map from './Map';
 
 class MapContainer extends Component {
   render() {
-    return console.log('Stuff');
+    return <Map/>
   }
 }
 

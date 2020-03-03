@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import AboutContainer from './AboutContainer';
+import About from './About';
 
 class AboutContainer extends Component {
   render() {
-    return console.log('Stuff');
+    return <About />
   }
 }
 

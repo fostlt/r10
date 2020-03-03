@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import FavesContainer from './FavesContainer';
+import Faves from './Faves';
 
 class FavesContainer extends Component {
   render() {
-    return console.log('Stuff');
+    return < Faves/>
   }
 }
 
