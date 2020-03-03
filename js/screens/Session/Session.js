@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './styles';
 
+import {Text, TouchableOpacity, View} from 'react-native';
+
 const Session = ({}) => {
     return(
-        console.log("stuff")
+        <Text>This is the session screen</Text>
     )
 }
 

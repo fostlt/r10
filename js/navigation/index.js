@@ -1,17 +1,15 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
+// import BottomTabNav from './BottomTabNav';
+import BottomTabNavScreens from './BottomTabNav';
+import SpeakerModal from '../screens/Speaker';
 
-import ScheduleScreen from '../screens/Schedule';
-import SessionScreen from '../screens/Session';
+const RootStack = createStackNavigator();
 
-const ScheduleStack = createStackNavigator();
-
-const ScheduleStackScreens = props => (
-    
-    <ScheduleStack.Navigator>
-        <ScheduleStack.Screen name="Schedule" component={ScheduleScreen}/>
-        <ScheduleStack.Screen name="Session" component={SessionScreen}/>
-    </ScheduleStack.Navigator>
-)
-
-export default ScheduleStackScreens;
+const RootStackScreens = props => (
+  <RootStack.Navigator mode="modal" headerMode="none" >
+    <RootStack.Screen name="BottomTab" component={BottomTabNavScreens} />
+    <RootStack.Screen name="Speaker" component={SpeakerModal} />
+  </RootStack.Navigator>
+);
+export default RootStackScreens;

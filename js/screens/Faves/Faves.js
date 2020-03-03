@@ -1,9 +1,14 @@
 import React from 'react';
 import styles from './styles';
+import {Text, TouchableOpacity, View} from 'react-native';
 
 const Faves = ({}) => {
     return(
-        console.log("stuff")
+        <View>
+            <Text>
+                Faves Screen
+            </Text>
+        </View>
     )
 }
 

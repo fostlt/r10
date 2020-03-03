@@ -1,13 +1,22 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, TouchableOpacity, View} from 'react-native';
 
-const Schedule = ({}) => {
-    return(
+
+const Schedule = ({navigation}) => (
+    
+        <View>
+        <Text> Schedule Screen</Text>
+        <TouchableOpacity onPress={()=> navigation.navigate('Session')}>
+        <Text> Go to Session</Text>
+        </TouchableOpacity>
         
-        <Text> Test</Text>
+        <TouchableOpacity onPress={()=> navigation.navigate('Speaker')}>
+                <Text>Go to Speaker Modal</Text>
+        </TouchableOpacity>
         
-    )
-}
+        </View>
+    
+);
 
 
 export default Schedule;

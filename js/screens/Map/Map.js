@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from './styles';
+import {Text, TouchableOpacity, View} from 'react-native';
 
 const Map = ({}) => {
     return(
-        console.log("stuff")
+        <View>
+            <Text>This is the Map Screen</Text>
+        </View>
     )
 }
 
