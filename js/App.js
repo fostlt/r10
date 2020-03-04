@@ -7,19 +7,18 @@
  */
 
 import React from 'react';
-import {ApolloProvider} from 'react-apollo';
+import {ApolloProvider} from '@apollo/react-hooks';
 import client from './config/api';
 
-
-import { NavigationContainer } from '@react-navigation/native';
+import {NavigationContainer} from '@react-navigation/native';
 import ScheduleNav from './navigation';
 
 const App = () => {
   return (
     <ApolloProvider client={client}>
-    <NavigationContainer>
-      <ScheduleNav />
-    </NavigationContainer>
+      <NavigationContainer>
+        <ScheduleNav />
+      </NavigationContainer>
     </ApolloProvider>
   );
 };
