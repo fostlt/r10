@@ -46,7 +46,6 @@ const MapStackScreens = props => {
 const BottomTabNav = createBottomTabNavigator();
 const BottomTabNavScreens = props => (
   <BottomTabNav.Navigator
-    initialRouteName="Schedule"
     tabBarOptions={{
       activeTintColor: 'white',
       inactiveTintColor: 'grey',
@@ -61,8 +60,8 @@ const BottomTabNavScreens = props => (
     screenOptions={({route}) => ({
       tabBarIcon: ({focused, color, size}) => {
         let iconName;
-        if (route.name === 'Schedule') {
-          iconName = focused ? 'calendar' : 'calendar-blank-outline';
+        if (route.name === "Schedule") {
+          iconName = focused ? 'calendar' : 'calendar-outline';
         } else if (route.name === 'Faves') {
           iconName = focused ? 'heart' : 'heart-outline';
         } else if (route.name === 'About') {

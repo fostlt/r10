@@ -5,7 +5,7 @@ import {Text, TouchableOpacity, View} from 'react-native';
 const Schedule = ({navigation}) => (
     
         <View>
-        <Text> Schedule Screen</Text>
+        <Text> This is the Schedule Screen</Text>
         <TouchableOpacity onPress={()=> navigation.navigate('Session')}>
         <Text> Go to Session</Text>
         </TouchableOpacity>

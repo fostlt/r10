@@ -1,5 +1,7 @@
-/* apollo client
+import ApolloClient from 'apollo-boost';
 
-apollo graphql/
+const client = new ApolloClient({
+  uri: 'https://r10.academy.red/graphql',
+});
 
-*/
+export default client;
