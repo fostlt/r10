@@ -30,7 +30,6 @@ const Schedule = ({navigation}) => (
     <TouchableOpacity onPress={() => navigation.navigate('Speaker')}>
       <Text>Go to Speaker Modal</Text>
     </TouchableOpacity>
-
   </View>
 );
 

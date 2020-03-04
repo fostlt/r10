@@ -2,7 +2,8 @@ import React from 'react';
 import {Text, View, SafeAreaView, Image} from 'react-native';
 import styles from './styles';
 
-const About = () => {
+const About = ({data}) => {
+  console.log(data);
   return (
     <SafeAreaView >
         <View style={styles.container}>
