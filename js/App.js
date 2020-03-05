@@ -12,13 +12,16 @@ import client from './config/api';
 
 import {NavigationContainer} from '@react-navigation/native';
 import ScheduleNav from './navigation';
+import FavesProvider from './context/FavesContext';
 
 const App = () => {
   return (
     <ApolloProvider client={client}>
+      <FavesProvider>
       <NavigationContainer>
         <ScheduleNav />
       </NavigationContainer>
+      </FavesProvider>
     </ApolloProvider>
   );
 };
