@@ -17,11 +17,11 @@ import FavesProvider from './context/FavesContext';
 const App = () => {
   return (
     <ApolloProvider client={client}>
-      <FavesProvider>
       <NavigationContainer>
+      <FavesProvider>
         <ScheduleNav />
-      </NavigationContainer>
       </FavesProvider>
+      </NavigationContainer>
     </ApolloProvider>
   );
 };

@@ -15,14 +15,8 @@ const Schedule = ({navigation, data}) => {
   console.log(data);
   return (
     <ScrollView>
-      {/* <Text>This is the Schedule Screen</Text>
-      <TouchableOpacity onPress={() => navigation.navigate('Session')}>
-        <Text> Go to Session</Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Speaker')}>
-        <Text>Go to Speaker Modal</Text>
-      </TouchableOpacity> */}
-      <TouchableOpacity onPress={() => navigation.navigate('Session')}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('Session', {session: data})}>
         <SectionList
           sections={data}
           renderItem={({item}) => (
