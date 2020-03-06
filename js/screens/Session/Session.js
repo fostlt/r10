@@ -1,14 +1,21 @@
 import React from 'react';
 import styles from './styles';
 
-import {Text, TouchableOpacity, View, SafeAreaView} from 'react-native';
+import {Text, TouchableOpacity, View, ScrollView} from 'react-native';
 
-const Session = ({}) => {
-    return(
-        <SafeAreaView>
-        <Text>This is the session screen</Text>
-        </SafeAreaView>
-    )
-}
+const Session = ({
+  faveIds,
+  addFaveSession,
+  navigation,
+  data,
+  removeFaveSession,
+}) => {
+  return (
+    <ScrollView>
+      <Text>This is the session screen</Text>
+      
+    </ScrollView>
+  );
+};
 
 export default Session;

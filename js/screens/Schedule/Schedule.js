@@ -11,12 +11,17 @@ import moment from 'moment';
 import styles from './styles';
 import {ScrollView} from 'react-native-gesture-handler';
 
+
 const Schedule = ({navigation, data}) => {
   console.log(data);
   return (
     <ScrollView>
       <TouchableOpacity
-        onPress={() => navigation.navigate('Session', {session: data})}>
+        onPress={() =>
+          navigation.navigate('Session', {
+            session: data,
+          })
+        }>
         <SectionList
           sections={data}
           renderItem={({item}) => (
