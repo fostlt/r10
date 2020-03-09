@@ -13,7 +13,6 @@ import {ScrollView} from 'react-native-gesture-handler';
 
 
 const Schedule = ({navigation, data}) => {
-  console.log(data);
   return (
     <ScrollView>
       <TouchableOpacity
@@ -32,7 +31,6 @@ const Schedule = ({navigation, data}) => {
           )}
           keyExtractor={item => item.id}
           renderSectionHeader={({section}) => {
-            // console.log(section)
             const time = moment(section.title).format('LT');
             return <Text style={styles.moment}>{`${time}`}</Text>;
           }}

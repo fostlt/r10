@@ -1,7 +1,17 @@
 import React from 'react';
-import {Text, View, SafeAreaView, Image, SectionList} from 'react-native';
+import {
+  Text,
+  View,
+  SafeAreaView,
+  Image,
+  SectionList,
+  TouchableOpacity,
+  LayoutAnimation,
+} from 'react-native';
 import styles from './styles';
 import {ScrollView} from 'react-native-gesture-handler';
+
+import CodeOfConduct from '../../components/CodeOfConduct';
 
 const About = ({data}) => {
   console.log(data);
@@ -22,12 +32,14 @@ const About = ({data}) => {
         </Text>
         <Text style={styles.title}>Code of Conduct</Text>
         <Text>Julima is awesome. @GALLARDOJULIMA</Text>
-        <Text style={styles.text}>© RED Academy 2020</Text>
       </View>
 
       <SectionList
-      
-      
+        sections={data}
+        renderItem={({item}) => (
+          <CodeOfConduct title={item.title} description={item.description} />
+        )}
+        keyExtractor={item => item.id}
       />
     </ScrollView>
   );
