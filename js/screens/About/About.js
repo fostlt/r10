@@ -28,10 +28,9 @@ const About = ({data}) => {
         <Text style={styles.title}>Date &amp; Venue</Text>
         <Text style={styles.text}>
           The R10 conference will take place on Saturday, December 8, 2018 in
-          Vancouver, BC.
+          Vancouver, BC. Julima is awesome. @GALLARDOJULIMA
         </Text>
         <Text style={styles.title}>Code of Conduct</Text>
-        <Text>Julima is awesome. @GALLARDOJULIMA</Text>
       </View>
 
       <SectionList

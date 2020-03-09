@@ -15,10 +15,12 @@ const Schedule = ({data}) => {
         sections={data}
         renderItem={({item}) => (
           <View>
-            <TouchableOpacity onPress={() => navigation.navigate("Session")}>
+            <TouchableOpacity onPress={() => navigation.navigate("Session", {
+              
+            })}>
               <Text style={styles.title}>{item.title}</Text>
               <Text style={styles.location}>{item.location}</Text>
-              
+
             </TouchableOpacity>
           </View>
         )}

@@ -16,6 +16,8 @@ const styles = StyleSheet.create({
     color: '#9963ea',
     fontSize: 23,
     fontWeight: '600',
+    marginBottom: 10
+    
   },
   subtext: {
     fontSize: 16,

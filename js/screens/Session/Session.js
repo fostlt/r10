@@ -5,8 +5,8 @@ import {
   View,
   SafeAreaView,
   SectionList,
-  Item,
 } from 'react-native';
+import SessionInfo from '../../components/SessionInfo';
 //import styles from './styles';
 //import {ScrollView} from 'react-native-gesture-handler';
 
@@ -16,13 +16,15 @@ const Session = ({data}) => {
     <View>
       <SectionList
       sections={data}
-      keyExtractor={data => data.id}
+      keyExtractor={data => data}
       renderItem={({item}) => (
         <View>
-        <Text>{item.location}</Text>
-        <Text>{item.title}</Text>
-        <Text>{item.name}</Text>
-        
+       <SessionInfo title={item.title} description={item.description} 
+       id={item.id} startTime={item.startTime}
+       
+       
+       />
+ 
         </View>
       )}
       
