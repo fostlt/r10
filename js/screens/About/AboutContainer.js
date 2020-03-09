@@ -4,13 +4,10 @@ import About from './About';
 import gql from 'graphql-tag';
 import {Query} from 'react-apollo';
 import {formatSessionData} from '../../lib/dataFormatHelpers';
-import {ALL_CONDUCTS} from '../../config/queries'
-
-
+import {ALL_CONDUCTS} from '../../config/queries';
 
 class AboutContainer extends Component {
   render() {
-
     return (
       <Query query={ALL_CONDUCTS}>
         {({loading, error, data}) => {
@@ -18,10 +15,8 @@ class AboutContainer extends Component {
           if (error) return <Text>Error</Text>;
           if (data) {
             const formattedData = formatSessionData(data.allConducts);
-            return <About data={formattedData}
-            
-            />;
-          };
+            return <About data={formattedData} />;
+          }
         }}
       </Query>
     );
