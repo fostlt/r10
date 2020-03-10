@@ -5,12 +5,11 @@ const styles = StyleSheet.create({
         backgroundColor: "#e6e6e6",
         fontWeight: "600",
         height: 25,
-        /* TODO align text center */
+        paddingTop: 4
     },
     title: {
         fontSize: 16,
         fontWeight: "600",
-        margin: 4
     },
     location: {
         fontSize: 14,

@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
     marginBottom: 20
   },
   bio: {
-    fontSize: 18
+    fontSize: 18,
+    lineHeight: 30
   },
   button: {
     backgroundColor: '#9963ea', 
@@ -32,7 +33,8 @@ const styles = StyleSheet.create({
       textAlign: "center",
       justifyContent: 'center',
       alignItems: 'center',
-      marginTop: 12
+      marginTop: 12,
+
   }
 });
 

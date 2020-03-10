@@ -12,11 +12,16 @@ const styles = StyleSheet.create({
       padding: 15
   },
   text: {
+      marginTop: 10,
+      marginBottom: 10,
       fontSize: 16,
-      fontWeight: "400"
+      fontWeight: "400",
+      lineHeight: 23
   },
   title: {
-      fontSize: 23,
+    marginTop: 10,
+    marginBottom: 10,
+      fontSize: 25,
       fontWeight: "600"
   }
 });
