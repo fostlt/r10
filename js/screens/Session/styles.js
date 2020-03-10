@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   image: {
     height: 80,
     width: 80,
-    borderRadius: 50,
+      
   },
   location: {
     fontSize: 18,
