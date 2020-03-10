@@ -13,9 +13,12 @@ class SessionContainer extends Component {
         {({loading, error, data}) => {
           if (loading) return <ActivityIndicator/>;
           if (error) return <Text>Error</Text>;
+          console.log("SessionContainer: ", this.props)
           if (data) {
-            const formattedData = formatSessionData(data.allSessions);
-            return <Session data={formattedData} />;
+            
+            return <Session 
+            datum={this.props.route}
+            navigation={this.props.navigation}/> ;
           }
         }}
       </Query>

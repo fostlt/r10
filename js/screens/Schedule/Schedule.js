@@ -4,23 +4,24 @@ import moment from 'moment';
 import styles from './styles';
 import {ScrollView, TouchableHighlight} from 'react-native-gesture-handler';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 
 const Schedule = ({data}) => {
+  // const navigation = useNavigation();
   const navigation = useNavigation();
-  console.log(data)
+
+  console.log(data);
   return (
     <ScrollView>
       <SectionList
         sections={data}
         renderItem={({item}) => (
           <View>
-            <TouchableOpacity onPress={() => navigation.navigate("Session", {
-              
+            <TouchableOpacity onPress={() => navigation.push('Session', {
+              item,
             })}>
               <Text style={styles.title}>{item.title}</Text>
               <Text style={styles.location}>{item.location}</Text>
-
             </TouchableOpacity>
           </View>
         )}
