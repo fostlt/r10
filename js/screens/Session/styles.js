@@ -56,14 +56,14 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: '#9963ea', 
     borderRadius: 30,
-    width: 170,
+    width: 200,
     height: 40,
     marginTop: 20,
     textAlign: 'center',
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft: "30%",
-    marginRight: "30%",
+    marginLeft: "auto",
+    marginRight: "auto",
   },
   buttonText: {
     color: "white",
