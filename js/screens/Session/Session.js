@@ -6,12 +6,15 @@ import {
   SafeAreaView,
   SectionList,
   Image,
+  Linear,
 } from 'react-native';
 import styles from './styles';
 import moment from 'moment';
 import {useNavigation} from '@react-navigation/native';
 
-const Session = ({datum}) => {
+// import LinearGradient from 'react-native-linear-gradient';
+
+const Session = ({datum, faveIds, addFaveSession, removeFaveSessionIds}) => {
   const navigation = useNavigation();
   console.log('Test: ', datum);
   return (
@@ -39,6 +42,12 @@ const Session = ({datum}) => {
               {datum.params.item.speaker.name}
             </Text>
           </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => addFaveSession(datum.params.item.id)}>
+          <Text style={styles.buttonText}>Add to Faves</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
