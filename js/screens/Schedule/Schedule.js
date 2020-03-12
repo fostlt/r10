@@ -24,7 +24,13 @@ const Schedule = ({data, faveIds}) => {
                   })
                 }>
                 <Text style={styles.title}>{item.title}</Text>
+                <View style={styles.subContainer}>
                 <Text style={styles.location}>{item.location}</Text>
+                <Text style={styles.heart}>
+                {faveIds.includes(item.id, 0) ? (
+                  <MaterialCommunityIcons name="heart" color="red" />
+                ) : null}</Text>
+                </View>
               </TouchableOpacity>
             </View>
           )}

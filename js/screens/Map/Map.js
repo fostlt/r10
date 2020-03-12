@@ -5,7 +5,7 @@ import {Text, TouchableOpacity, View} from 'react-native';
 const Map = ({}) => {
     return(
         <View>
-            <Text>This is the Map Screen</Text>
+            <Text style={styles.mapContainer}>Maps are coming soon</Text>
         </View>
     )
 }
